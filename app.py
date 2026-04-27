@@ -61,7 +61,7 @@ if st.button("Track Che Stats"):
                 st.divider()
 
                 with st.expander("💿 View your Top 100 Che Songs"):
-                    st.info("Ranked by Total Minutes (Playcount × Track Duration)")
+                    st.info("Ranked by Total Minutes")
                     for i, song in enumerate(che_tracks[:100], 1):
                         st.write(f"{i}. **{song['Song']}** — {song['Streams']} streams — {song['Minutes']} mins")
                 
