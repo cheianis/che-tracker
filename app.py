@@ -10,7 +10,7 @@ except Exception:
     st.stop()
 
 st.set_page_config(page_title="Che Listening Tracker", page_icon="🐰")
-st.title("🐰Che Listening History)
+st.title("🐰Che Listening History")
 st.write("Calculate your total hours and see your top songs for **Che**.")
 
 username = st.text_input("Enter Last.fm Username", placeholder="e.g. chefan123")
