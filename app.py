@@ -3,8 +3,8 @@ import pylast
 
 # 1. Secure Setup (We will add these keys in Step 5)
 try:
-    API_KEY = st.secrets["ee5fb89bbb1440a526c8d108843a41d4"]
-    API_SECRET = st.secrets["d0fcf55fc77937658856cbb883c975c4"]
+    API_KEY = st.secrets["lastfm_api_key"]
+    API_SECRET = st.secrets["lastfm_api_secret"]
     network = pylast.LastFMNetwork(api_key=API_KEY, api_secret=API_SECRET)
 except:
     st.error("API Keys missing! Add them in Streamlit Secrets.")
